@@ -1,0 +1,29 @@
+name = "NeoNeonSyndicate"
+version = "6"
+
+[place]
+shared_packages_dir = "Packages"
+
+[tree]
+$className = "DataModel"
+
+[tree.StarterPlayer]
+$className = "StarterPlayer"
+
+[tree.StarterPlayer.StarterPlayerScripts]
+$className = "StarterPlayerScripts"
+
+[tree.StarterPlayer.StarterPlayerScripts.Client]
+$path = "src/client"
+
+[tree.ServerScriptService]
+$className = "ServerScriptService"
+
+[tree.ServerScriptService.Server]
+$path = "src/server"
+
+[tree.ReplicatedStorage]
+$className = "ReplicatedStorage"
+
+[tree.ReplicatedStorage.Shared]
+$path = "src/shared"
