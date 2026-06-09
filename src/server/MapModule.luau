@@ -117,7 +117,7 @@ function MapModule.buildMap(mapParent)
 	spawn.Neutral = true
 	spawn.AllowTeamChangeOnTouch = false
 	spawn.Duration = 0
-	spawn.Parent = mapFolder
+	spawn.Parent = mapParent  -- Workspace直下に置く（Folderの中ではSpawnが機能しない）
 
 	-- ============================================
 	-- 地面（濡れたアスファルト）
