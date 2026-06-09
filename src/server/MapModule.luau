@@ -104,6 +104,22 @@ function MapModule.buildMap(mapParent)
 	Lighting.TimeOfDay        = "23:00:00"  -- 深夜
 
 	-- ============================================
+	-- SpawnLocation（プレイヤースポーン地点）
+	-- ============================================
+	local spawn = Instance.new("SpawnLocation")
+	spawn.Size = Vector3.new(6, 1, 6)
+	spawn.CFrame = CFrame.new(0, 1, 0)
+	spawn.Anchored = true
+	spawn.BrickColor = BrickColor.new("Bright blue")
+	spawn.Material = Enum.Material.Neon
+	spawn.Transparency = 0.5
+	spawn.TeamColor = BrickColor.new("White")
+	spawn.Neutral = true
+	spawn.AllowTeamChangeOnTouch = false
+	spawn.Duration = 0
+	spawn.Parent = mapFolder
+
+	-- ============================================
 	-- 地面（濡れたアスファルト）
 	-- ============================================
 	local ground = part(mapFolder,

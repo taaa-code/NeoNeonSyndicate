@@ -236,9 +236,8 @@ RunService.Heartbeat:Connect(function(dt)
 end)
 
 -- ============================================
--- ゲーム開始
+-- ゲーム開始（マップを最初に生成）
 -- ============================================
-task.wait(2)
 print("🌃 Neo Neon Syndicate サーバー起動！")
 MapModule.buildMap(workspace)
 NPCModule.spawnAll(workspace)
